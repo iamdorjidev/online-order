@@ -48,8 +48,14 @@ a{
 }
 
 /*-- LAYAOUT --*/
+.parents{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
 .main {
-    padding: 2rem 0;
+    padding: 10px;
 }
 .bd-grid{
     display: grid;

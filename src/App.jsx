@@ -110,17 +110,20 @@ const App = () => {
 ];
   return (
     <div>
-      
-        <p>{products.map(function(elem){
-          return <Card 
+      <div className="parents">
+      {products.map(function(elem, idx){
+          return <div className="div"key={idx}>
+            <Card 
           brand={elem.brand} 
           image={elem.image} 
           name={elem.brandname}
           beforeprice={elem.beforeprice}
           afterprice={elem.afterprice}
           />
-        })}</p>
-      
+          </div>
+
+        })}
+        </div>
     </div>
   )
 }
