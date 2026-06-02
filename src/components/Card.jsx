@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Button from './button/Button'
 const Card = (props) => {
   return (
     <div>
@@ -19,6 +19,7 @@ const Card = (props) => {
                         <span class="card__preci card__preci--now">${props.afterprice}</span>
                     </div>
                     <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+                    <Button />
                 </div>
             </article>
         </main>

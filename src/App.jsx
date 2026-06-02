@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './components/Card'
+import Header from './components/header/Header';
 const App = () => {
   const products = [
   {
@@ -110,6 +111,7 @@ const App = () => {
 ];
   return (
     <div>
+      <Header />
       <div className="parents">
       {products.map(function(elem, idx){
           return <div className="div"key={idx}>
